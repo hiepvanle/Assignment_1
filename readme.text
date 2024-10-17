@@ -1,0 +1,33 @@
+Biên dịch bằng lệnh:
+gcc -c matrix_operations.c
+gcc -c matrixMultCompare.c
+gcc -o matrixMultCompare matrix_operations.o matrixMultCompare.o -lm -lrt -pthread
+
+Vẽ hình theo kích thước ma trận:
+gnuplot plot_script_10.gp
+gnuplot plot_script_100.gp
+gnuplot plot_script_1000.gp
+gnuplot plot_script_2000.gp
+gnuplot plot_script_2500.gp
+gnuplot plot_script_3000.gp
+
+
+Chạy chương trình:
+./matrixMultCompare
+
+Xuất đồ thị ra file ảnh PNG:
+set terminal png
+set output 'output.png'
+
+Xuất đồ thị ra file ảnh PDF 
+set terminal pdf
+set output 'plot_script_10.pdf'
+
+
+set terminal pdf
+set output 'plot_script_100.pdf'
+
+
+set terminal pdf
+set output 'plot_script_1000.pdf'
+
