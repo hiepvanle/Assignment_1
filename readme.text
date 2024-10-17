@@ -1,9 +1,9 @@
-Biên dịch bằng lệnh:
+Compile with command:
 gcc -c matrix_operations.c
 gcc -c matrixMultCompare.c
 gcc -o matrixMultCompare matrix_operations.o matrixMultCompare.o -lm -lrt -pthread
 
-Vẽ hình theo kích thước ma trận:
+Drawing shapes according to matrix dimensions:
 gnuplot plot_script_10.gp
 gnuplot plot_script_100.gp
 gnuplot plot_script_1000.gp
@@ -12,22 +12,14 @@ gnuplot plot_script_2500.gp
 gnuplot plot_script_3000.gp
 
 
-Chạy chương trình:
+Run the program:
 ./matrixMultCompare
 
-Xuất đồ thị ra file ảnh PNG:
+Export graph to PNG image file:
 set terminal png
 set output 'output.png'
 
-Xuất đồ thị ra file ảnh PDF 
+Export graph to PDF image file:
 set terminal pdf
 set output 'plot_script_10.pdf'
-
-
-set terminal pdf
-set output 'plot_script_100.pdf'
-
-
-set terminal pdf
-set output 'plot_script_1000.pdf'
 
